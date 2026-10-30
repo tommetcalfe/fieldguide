@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta name="Description" content="FIELDGUIDE is an occassional collective and sometimes journal for people interested in design, technology and society and the intersections where they overlap." />
+<meta name="" content="Fieldguide" />
+<meta name="Keywords" content="Fieldguide, Field guide, Collaboration, collective, design, technology, society, Digital, iot, find, play, make" />
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+<meta charset=utf-8 />
+<link rel="stylesheet" href="site.css" type="text/css" />
+<title>Fieldguide: Insight Journalism</title>
+
+</head>
+
+<body>
+
+<div id="container">
+
+	<nav id="navigation">
+		<details id="menu">
+			<summary><img src="logos/FG_SYMBOL1v2.jpg" width="40" height="51" alt="Menu" /></summary>
+			<ul>
+				<li><a href="space.html">SPACE</a></li>
+				<li><a href="london-design-festival.html">LONDON DESIGN FESTIVAL</a></li>
+				<li><a href="insight-journalism.html" aria-current="page">INSIGHT JOURNALISM</a></li>
+				<li><a href="index.html">ABOUT</a></li>
+			</ul>
+		</details>
+	</nav>
+
+	<div id="issue">
+
+		<div class="panel">
+			<img src="images/thumb/FG_IJIssue2.jpg" width="420" height="616" alt="Insight Journalism, cover" />
+		</div>
+
+		<div class="panel">
+			<img id="zoom_issue" src="images/small/FG_IJIssue_frnt.jpg" data-zoom-image="images/large/FG_IJIssue_frnt.jpg" alt="Insight Journalism, inside pages" />
+		</div>
+
+		<div class="panel">
+			<img src="images/small/FG_IJIssue_bck.jpg" width="420" height="616" alt="Insight Journalism, back" />
+		</div>
+
+	</div>
+
+</div>
+
+
+<!-- Scripts -->
+
+	<script src="menu.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="js_zoom/jquery.elevatezoom.js"></script>
+
+
+<!-- Script for zoom -->
+
+	<script>
+
+		// the plugin blocks scrolling on touch screens, so only zoom with a mouse
+		if (window.matchMedia("(hover: hover)").matches) {
+			$("#zoom_issue").elevateZoom({
+				zoomType: "inner",
+				cursor: "crosshair",
+
+				zoomWindowFadeIn: 500,
+				zoomWindowFadeOut: 500,
+				lensFadeIn: 500,
+				lensFadeOut: 500
+			});
+		}
+
+	</script>
+
+
+</body>
+</html>
